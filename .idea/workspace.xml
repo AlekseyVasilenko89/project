@@ -112,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/update.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="119">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -374,7 +374,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564746348120" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564746866580" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -520,7 +520,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563379594089</updated>
       <workItem from="1563379599402" duration="37359000" />
-      <workItem from="1563811289576" duration="94964000" />
+      <workItem from="1563811289576" duration="96033000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1564672979324</created>
@@ -543,17 +543,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564746271454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version 1">
+      <created>1564746354317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564746354317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132323000" />
+    <option name="totallyTimeSpent" value="133392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6022222" visible="true" weight="0.30408472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6022222" visible="true" weight="0.30408472" />
       <window_info id="Structure" order="1" sideWeight="0.5009242" side_tool="true" weight="0.24886535" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -563,7 +570,7 @@
       <window_info id="Web" order="7" sideWeight="0.39777777" side_tool="true" weight="0.17019667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
-      <window_info active="true" anchor="bottom" x="22" y="262" width="1322" height="203" id="Run" order="2" sideWeight="0.16414523" visible="true" weight="0.12393888" />
+      <window_info anchor="bottom" x="22" y="262" width="1322" height="203" id="Run" order="2" sideWeight="0.16414523" visible="true" weight="0.12393888" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -923,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
