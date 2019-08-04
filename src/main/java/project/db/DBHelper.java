@@ -4,6 +4,7 @@ import org.hibernate.cfg.Environment;
 import project.model.User;
 
 import org.hibernate.cfg.Configuration;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,20 +14,21 @@ public class DBHelper {
     private static DBHelper dbHelper;
     private Connection connection;
     private Configuration configuration;
-    private Util util= new Util();
+    private Util util = new Util();
 
-    private DBHelper() { }
+    private DBHelper() {
+    }
 
     public static DBHelper getDbHelper() {
-        if(dbHelper== null) {
-            dbHelper= new DBHelper();
+        if (dbHelper == null) {
+            dbHelper = new DBHelper();
         }
         return dbHelper;
     }
 
-    public Connection getConnection(){
+    public Connection getConnection() {
         try {
-            String URL = util.getPropertiesValue("DB_URL")+ "?serverTimezone=UTC";
+            String URL = "jdbc:mysql://localhost:3306/users_manager?serverTimezone=UTC";
             String USERNAME = "root";
             String PASSWORD = "root";
             Class.forName("com.mysql.jdbc.Driver");
