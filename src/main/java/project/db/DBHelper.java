@@ -12,7 +12,8 @@ import java.util.Properties;
 public class DBHelper {
     private static DBHelper dbHelper;
     private Connection connection;
-    Configuration configuration;
+    private Configuration configuration;
+    private Util util= new Util();
 
     private DBHelper() { }
 
@@ -25,7 +26,7 @@ public class DBHelper {
 
     public Connection getConnection(){
         try {
-            String URL = "jdbc:mysql://localhost:3306/users_manager?serverTimezone=UTC";
+            String URL = util.getPropertiesValue("DB_URL")+ "?serverTimezone=UTC";
             String USERNAME = "root";
             String PASSWORD = "root";
             Class.forName("com.mysql.jdbc.Driver");
