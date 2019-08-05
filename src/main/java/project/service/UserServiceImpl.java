@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void remove(int id) {
         User user = hibernateUserDAO.getById(id);
-        if (!(user == null)) {
+        if (user != null) {
             hibernateUserDAO.remove(user);
         }
     }

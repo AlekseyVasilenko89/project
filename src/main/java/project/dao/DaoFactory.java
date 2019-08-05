@@ -1,5 +1,5 @@
 package project.dao;
 
-public interface UserDaoFactory {
+public interface DaoFactory {
     public UserDAO getUserDAO();
 }
