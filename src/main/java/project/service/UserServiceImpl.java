@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     private static UserService userService;
-    Client client= new Client();
+    private Client client= new Client();
 
     private UserDAO UserDAO = client.getDaoFactory().getUserDAO();
 
