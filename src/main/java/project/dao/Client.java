@@ -8,6 +8,7 @@ public class Client {
 
     public DaoFactory getDaoFactory() {
         String propertiesName = "DB_CLIENT";
+        System.out.println(util.getPropertiesValue(propertiesName));
         if (util.getPropertiesValue(propertiesName).equals("JDBC")){
             daoFactory= new JDBCDaoFactory();
         }
@@ -17,5 +18,4 @@ public class Client {
         }
         return daoFactory;
     }
-
 }
