@@ -1,5 +1,6 @@
 package project.service;
 
+import project.dao.Client;
 import project.dao.HibernateUserDAOImpl;
 import project.dao.UserDAO;
 import project.model.User;
@@ -8,8 +9,9 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     private static UserService userService;
+    Client client= new Client();
 
-    private UserDAO UserDAO = new HibernateUserDAOImpl();
+    private UserDAO UserDAO = client.getDaoFactory().getUserDAO();
 
     public static UserService getUserService() {
         if (userService== null) {

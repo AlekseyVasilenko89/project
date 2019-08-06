@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet(urlPatterns = "/users")
 public class GetAllServlet extends HttpServlet {
-    private UserService service = new UserServiceImpl();
+    private UserService service = UserServiceImpl.getUserService();
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<User> users = service.getAll();
