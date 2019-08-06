@@ -9,7 +9,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private static UserService userService;
 
-    private UserDAO hibernateUserDAO = new HibernateUserDAOImpl();
+    private UserDAO UserDAO = new HibernateUserDAOImpl();
 
     public static UserService getUserService() {
         if (userService== null) {
@@ -20,29 +20,29 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void add(User user) {
-        hibernateUserDAO.add(user);
+        UserDAO.add(user);
     }
 
     @Override
     public List<User> getAll() {
-        return hibernateUserDAO.getAll();
+        return UserDAO.getAll();
     }
 
     @Override
     public User getById(int id) {
-        return hibernateUserDAO.getById(id);
+        return UserDAO.getById(id);
     }
 
     @Override
     public void update(User user) {
-        hibernateUserDAO.update(user);
+        UserDAO.update(user);
     }
 
     @Override
     public void remove(int id) {
-        User user = hibernateUserDAO.getById(id);
+        User user = UserDAO.getById(id);
         if (user != null) {
-            hibernateUserDAO.remove(user);
+            UserDAO.remove(user);
         }
     }
 }
