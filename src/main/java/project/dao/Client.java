@@ -1,20 +1,20 @@
 package project.dao;
 
-import project.db.Util;
+import project.config.Util;
 
 public class Client {
     private Util util = new Util();
     private DaoFactory daoFactory;
+    private String propertiesName = "DB_CLIENT";
 
     public DaoFactory getDaoFactory() {
-        String propertiesName = "DB_CLIENT";
-        System.out.println(util.getPropertiesValue(propertiesName));
-        if (util.getPropertiesValue(propertiesName).equals("JDBC")){
-            daoFactory= new JDBCDaoFactory();
+        System.out.println("client work");
+        if (util.getPropertiesValue(propertiesName).equals("JDBC")) {
+            daoFactory = new JDBCDaoFactory();
         }
-        if (util.getPropertiesValue(propertiesName).equals("HIBERNATE")){
+        if (util.getPropertiesValue(propertiesName).equals("HIBERNATE")) {
             System.out.println("Properties ok");
-            daoFactory= new HibernateDaoFactory();
+            daoFactory = new HibernateDaoFactory();
         }
         return daoFactory;
     }

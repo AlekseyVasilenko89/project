@@ -13,7 +13,7 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/delete")
 public class RemoveServlet extends HttpServlet {
-    private UserService service = new UserServiceImpl();
+    private UserService service = UserServiceImpl.getUserService();
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/delete.jsp");

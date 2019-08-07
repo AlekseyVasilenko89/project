@@ -14,7 +14,7 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/add")
 public class AddServlet extends HttpServlet {
-    private UserService service = new UserServiceImpl();
+    private UserService service = UserServiceImpl.getUserService();
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/addUser.jsp");

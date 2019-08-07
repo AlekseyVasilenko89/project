@@ -3,7 +3,7 @@ package project.dao;
 import org.hibernate.ObjectNotFoundException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import project.config.HibernateUtil;
+import project.config.GetSession;
 import project.model.User;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class HibernateUserDAOImpl implements UserDAO {
     @Override
     public void add(User user) {
         Transaction trans = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = GetSession.getSessionFactory().openSession()) {
             trans = session.beginTransaction();
             session.save(user);
             trans.commit();
@@ -29,7 +29,7 @@ public class HibernateUserDAOImpl implements UserDAO {
     @SuppressWarnings("unchecked")
     public List<User> getAll() {
         List<User> listOfUser = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = GetSession.getSessionFactory().openSession()) {
             listOfUser = session.createQuery("from User").getResultList();
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,13 +40,12 @@ public class HibernateUserDAOImpl implements UserDAO {
     @Override
     public User getById(int id) {
         User user = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = GetSession.getSessionFactory().openSession()) {
             user = session.load(User.class, id);
             user.getId();
         } catch (ObjectNotFoundException e) {
             user = null;
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return user;
@@ -55,7 +54,7 @@ public class HibernateUserDAOImpl implements UserDAO {
     @Override
     public void update(User user) {
         Transaction trans = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = GetSession.getSessionFactory().openSession()) {
             trans = session.beginTransaction();
             session.update(user);
             trans.commit();
@@ -70,9 +69,9 @@ public class HibernateUserDAOImpl implements UserDAO {
     @Override
     public void remove(User user) {
         Transaction trans = null;
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = GetSession.getSessionFactory().openSession()) {
             trans = session.beginTransaction();
-                session.delete(user);
+            session.delete(user);
             trans.commit();
         } catch (Exception e) {
             if (trans != null) {

@@ -1,6 +1,6 @@
 package project.dao;
 
-import project.config.UserConfig;
+import project.config.DBHelper;
 import project.model.User;
 
 import java.sql.*;
@@ -9,8 +9,8 @@ import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
 
-    private UserConfig userConfig = new UserConfig();
-    private Connection connection = userConfig.getConnection();
+    private DBHelper dbHelper = DBHelper.getDbHelper();
+    private Connection connection = dbHelper.getConnection();
 
     @Override
     public void add(User user) {
