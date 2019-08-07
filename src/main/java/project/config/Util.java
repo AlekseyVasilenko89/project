@@ -12,10 +12,8 @@ public class Util {
         try (InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("config.properties")) {
             properties.load(inputStream);
             propertiesValue = properties.getProperty(propertiesName, "HIBERNATE");
-            System.out.println("ok");
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("error util");
         }
         return propertiesValue;
     }
