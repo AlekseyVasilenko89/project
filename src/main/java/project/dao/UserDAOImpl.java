@@ -54,6 +54,13 @@ public class UserDAOImpl implements UserDAO {
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            resultSet.next();
+            user.setId(resultSet.getInt("id"));
+            user.setName(resultSet.getString("name"));
+            user.setAge(resultSet.getInt("age"));
+            user.setPassword(resultSet.getString("password"));
         } catch (SQLException e) {
             e.printStackTrace();
         }

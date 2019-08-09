@@ -22,7 +22,6 @@ public class RemoveServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         int id = Integer.parseInt(req.getParameter("id"));
-        System.out.println(id);
         service.remove(id);
         resp.sendRedirect("users");
     }
