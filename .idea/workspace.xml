@@ -7,51 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1794e3d9-c060-43a7-bf2e-7e10642d6b44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/servlet/UserFilterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/froUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7c7413e-e5c3-47e9-9af4-f277fbf0b1aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b7c7413e-e5c3-47e9-9af4-f277fbf0b1aa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/config/GetSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/config/GetSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/config/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/config/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/HibernateUserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/HibernateUserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/dao/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlet/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/servlet/AddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlet/GetAllServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/servlet/GetAllServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlet/UpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/servlet/UpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/showUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/dao/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/dao/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/dao/HibernateUserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/dao/HibernateUserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/dao/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/dao/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/servlet/AddServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/servlet/AddServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/servlet/GetAllServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/servlet/GetAllServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/servlet/UpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/servlet/UpdateServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/dao/HibernateUserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/dao/HibernateUserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/dao/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/dao/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/servlet/AddServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/servlet/AddServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/servlet/GetAllServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/servlet/GetAllServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/servlet/UpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/WEB-INF/classes/project/servlet/UpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/addUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/showUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/showUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/update.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/project/dao/HibernateUserDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="109" column="74" lean-forward="true" selection-start-line="109" selection-start-column="74" selection-end-line="110" selection-end-column="12" />
+            <state relative-caret-position="161">
+              <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -605,7 +563,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565810419459" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565810817663" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -759,7 +717,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563379594089</updated>
       <workItem from="1563379599402" duration="37359000" />
-      <workItem from="1563811289576" duration="197322000" />
+      <workItem from="1563811289576" duration="197567000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1564672979324</created>
@@ -880,11 +838,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565377548191</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="version 1">
+      <created>1565810534931</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565810534931</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234681000" />
+    <option name="totallyTimeSpent" value="234926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -901,7 +866,7 @@
       <window_info anchor="bottom" id="Duplicate detector" weight="0.3293718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
-      <window_info active="true" anchor="bottom" x="22" y="262" width="1322" height="203" id="Run" order="2" sideWeight="0.16414523" visible="true" weight="0.51273346" />
+      <window_info active="true" anchor="bottom" x="22" y="262" width="1322" height="203" id="Run" order="2" sideWeight="0.16414523" visible="true" weight="0.5229202" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1342,8 +1307,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/dao/HibernateUserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="109" column="74" lean-forward="true" selection-start-line="109" selection-start-column="74" selection-end-line="110" selection-end-column="12" />
+        <state relative-caret-position="161">
+          <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
