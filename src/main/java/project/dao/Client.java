@@ -3,15 +3,14 @@ package project.dao;
 import project.config.Util;
 
 public class Client {
-    private Util util = new Util();
-    private DaoFactory daoFactory;
-    private String propertiesName = "DB_CLIENT";
+    private static DaoFactory daoFactory;
 
-    public DaoFactory getDaoFactory() {
-        if (util.getPropertiesValue(propertiesName).equals("JDBC")) {
+    public static DaoFactory getDaoFactory() {
+        String propertiesName = "DB_CLIENT";
+        if (Util.getPropertiesValue(propertiesName).equals("JDBC")) {
             daoFactory = new JDBCDaoFactory();
         }
-        if (util.getPropertiesValue(propertiesName).equals("HIBERNATE")) {
+        if (Util.getPropertiesValue(propertiesName).equals("HIBERNATE")) {
             daoFactory = new HibernateDaoFactory();
         }
         return daoFactory;

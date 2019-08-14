@@ -9,7 +9,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private static UserService userService;
     private Client client = new Client();
-    private UserDAO UserDAO = client.getDaoFactory().getUserDAO();
+    private UserDAO UserDAO = Client.getDaoFactory().getUserDAO();
 
     private UserServiceImpl() {
     }
@@ -46,6 +46,16 @@ public class UserServiceImpl implements UserService {
         User user = UserDAO.getById(id);
         if (user != null) {
             UserDAO.remove(user);
+        }
+    }
+
+    @Override
+    public User getByNameAndPassword(String name, String password) {
+        User user = null;
+        if (name == null || password == null) {
+            return user;
+        } else {
+            return UserDAO.getByNameAndPassword(name, password);
         }
     }
 }

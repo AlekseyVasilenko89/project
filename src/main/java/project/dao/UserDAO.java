@@ -15,4 +15,6 @@ public interface UserDAO {
     void update(User user);
 
     void remove(User user);
+
+    User getByNameAndPassword(String name, String password);
 }

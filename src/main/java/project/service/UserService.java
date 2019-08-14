@@ -15,4 +15,6 @@ public interface UserService {
     void update(User user);
 
     void remove(int id);
+
+    User getByNameAndPassword (String name, String password);
 }

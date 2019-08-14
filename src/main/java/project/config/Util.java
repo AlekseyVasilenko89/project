@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class Util {
-    public String getPropertiesValue(String propertiesName) {
+    public static String getPropertiesValue(String propertiesName) {
         String propertiesValue = "";
         Properties properties = new Properties();
 

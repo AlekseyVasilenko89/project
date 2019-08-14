@@ -1,6 +1,7 @@
 package project.model;
 
 import javax.persistence.*;
+import javax.swing.*;
 
 @Entity
 @Table(name = "users")
@@ -20,20 +21,25 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "role")
+    private String role;
+
     public User() {
     }
 
-    public User(String name, Integer age, String password) {
+    public User(String name, Integer age, String password, String role) {
         this.name = name;
         this.age = age;
         this.password = password;
+        this.role = role;
     }
 
-    public User(Integer id, String name, Integer age, String password) {
+    public User(Integer id, String name, Integer age, String password, String role) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.password = password;
+        this.role = role;
     }
 
     public int getId() {
@@ -68,6 +74,14 @@ public class User {
         this.password = password;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -75,7 +89,8 @@ public class User {
         User user = (User) o;
         return getAge() == user.getAge() &&
                 getName().equals(user.getName()) &&
-                getPassword().equals(user.getPassword());
+                getPassword().equals(user.getPassword())&&
+                getRole().equals(user.getRole());
     }
 
     @Override
@@ -90,6 +105,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
                 '}';
     }
 }

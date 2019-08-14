@@ -28,10 +28,11 @@ public class UpdateServlet extends HttpServlet {
         int id = Integer.parseInt(req.getParameter("id"));
         User user = service.getById(id);
         System.out.println(user.toString());
-        user.setId(id);
+        user.setId(Integer.parseInt(req.getParameter("id")));
         user.setName(req.getParameter("name"));
         user.setAge(Integer.parseInt(req.getParameter("age")));
         user.setPassword(req.getParameter("password"));
+        user.setRole(req.getParameter("role"));
         service.update(user);
         resp.sendRedirect("users");
     }

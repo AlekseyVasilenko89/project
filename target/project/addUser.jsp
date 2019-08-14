@@ -8,6 +8,7 @@
     <input required type="text" name="name" placeholder="Имя">
     <input required type="text" name="age" placeholder="Возраст">
     <input required type="password" name="password" placeholder="Пароль">
+    <input required type="text" name="role" placeholder="Права">
     <input type="submit" value="Сохранить">
 </form>
 </body>

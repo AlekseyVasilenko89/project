@@ -23,4 +23,11 @@ public class GetAllServlet extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/showUsers.jsp");
         dispatcher.forward(req, resp);
     }
+
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        List<User> users = service.getAll();
+        req.setAttribute("users", users);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/showUsers.jsp");
+        dispatcher.forward(req, resp);
+    }
 }
