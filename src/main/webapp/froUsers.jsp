@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Добро пожаловать ${user.name}</h1>
+<h1>Добро пожаловать!!!</h1>
 </body>
 </html>
