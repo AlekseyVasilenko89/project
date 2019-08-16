@@ -13,17 +13,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebFilter(urlPatterns = "/users")
+@WebFilter(urlPatterns = {"/users", "/add", "/update", "/delete"})
 public class UserFilterServlet implements Filter {
     private String encoding;
     private UserService service = UserServiceImpl.getUserService();
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        encoding = filterConfig.getInitParameter("requestEncoding");
-
-        // если не установлена — устанавливаем UTF-8
-        if (encoding == null) encoding = "UTF-8";
+//        encoding = filterConfig.getInitParameter("requestEncoding");
+//        if (encoding == null) encoding = "UTF-8";
     }
 
     @Override

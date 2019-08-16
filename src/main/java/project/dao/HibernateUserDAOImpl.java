@@ -108,15 +108,11 @@ public class HibernateUserDAOImpl implements UserDAO {
 
         User user = null;
         try (Session session = HibernateUserDAOImpl.getSessionFactory().openSession()) {
-            Query query = session.createQuery("from users where name = :name");
-            query.setParameter("name", name);
-//            query.setParameter("password", password);
-            List<User> list = query.list();
-            for (User u : list) {
-                user = u;
-                System.out.println(user);
-            }
-            user.getId();
+            user = session.createNativeQuery(
+                    "SELECT * FROM users WHERE name = ? and  password = ?", User.class)
+                    .setParameter(1, name)
+                    .setParameter(2, password)
+                    .getSingleResult();
         } catch (ObjectNotFoundException e) {
             user = null;
         } catch (Exception e) {
