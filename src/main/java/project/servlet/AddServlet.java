@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/add")
+@WebServlet(urlPatterns = "/admin/add")
 public class AddServlet extends HttpServlet {
     private UserService service = UserServiceImpl.getUserService();
 
