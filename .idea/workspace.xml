@@ -8,13 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1794e3d9-c060-43a7-bf2e-7e10642d6b44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlet/AdminFilterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/filter/AdminFilterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlet/UserFilterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/filter/UserFilterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/showUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project/showUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/project/showUsers.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -604,7 +597,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566120416985" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566122321181" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -763,7 +756,7 @@
       <updated>1563379594089</updated>
       <workItem from="1563379599402" duration="37359000" />
       <workItem from="1563811289576" duration="207741000" />
-      <workItem from="1565970150918" duration="24982000" />
+      <workItem from="1565970150918" duration="25588000" />
     </task>
     <task id="LOCAL-00001" summary="version 1">
       <created>1564672979324</created>
@@ -919,11 +912,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566054986056</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="version 1">
+      <created>1566121847345</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1566121847345</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270082000" />
+    <option name="totallyTimeSpent" value="270688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
