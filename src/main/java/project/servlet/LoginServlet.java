@@ -28,8 +28,7 @@ public class LoginServlet extends HttpServlet {
         session.setAttribute("user", user);
 
         if (user != null && user.getRole().equals("admin")) {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("admin/users");
-            dispatcher.forward(request, response);
+            response.sendRedirect("admin/users");
         } else if (user != null && user.getRole().equals("user")) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/user");
             dispatcher.forward(request, response);

@@ -1,4 +1,4 @@
-package project.servlet;
+package project.filter;
 
 import project.model.User;
 
@@ -29,8 +29,7 @@ public class AdminFilterServlet implements Filter {
         if (userSession != null && userSession.getRole().equals("admin")) {
             chain.doFilter(request, response);
         } else if (userSession != null && userSession.getRole().equals("user")) {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/user");
-            dispatcher.forward(request, response);
+            res.sendRedirect("/user");
         } else {
             res.sendRedirect("/");
         }
