@@ -18,7 +18,7 @@ public class ForUsersServlet extends HttpServlet {
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
         req.setAttribute("user", user);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/froUsers.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/forUsers.jsp");
         dispatcher.forward(req, resp);
     }
 
@@ -26,7 +26,7 @@ public class ForUsersServlet extends HttpServlet {
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
         req.setAttribute("user", user);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/froUsers.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/forUsers.jsp");
         dispatcher.forward(req, resp);
     }
 }

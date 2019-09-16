@@ -4,7 +4,6 @@ import project.model.User;
 import project.service.UserService;
 import project.service.UserServiceImpl;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,14 +25,6 @@ public class LoginServlet extends HttpServlet {
         final String password = request.getParameter("password");
         User user = service.getByNameAndPassword(name, password);
         session.setAttribute("user", user);
-
-        if (user != null && user.getRole().equals("admin")) {
-            response.sendRedirect("admin/users");
-        } else if (user != null && user.getRole().equals("user")) {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/user");
-            dispatcher.forward(request, response);
-        } else {
-            response.sendRedirect("/");
-        }
+        response.sendRedirect("admin/users");
     }
 }

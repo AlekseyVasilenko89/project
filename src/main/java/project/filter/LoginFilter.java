@@ -1,7 +1,8 @@
 package project.filter;
 
-
 import project.model.User;
+import project.service.UserService;
+import project.service.UserServiceImpl;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -10,8 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/user")
-public class UserFilterServlet implements Filter {
+@WebFilter(urlPatterns = "/login")
+public class LoginFilter implements Filter {
+    private UserService service = UserServiceImpl.getUserService();
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
     }
@@ -20,11 +23,12 @@ public class UserFilterServlet implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-        HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
-        HttpSession session = req.getSession();
-        User userSession = (User) session.getAttribute("user");
-        if(userSession != null && userSession.getRole().equals("user")) {
+        final String name = request.getParameter("name");
+        final String password = request.getParameter("password");
+        User user = service.getByNameAndPassword(name, password);
+
+        if (user != null) {
             chain.doFilter(request, response);
         } else {
             res.sendRedirect("/");
@@ -33,5 +37,6 @@ public class UserFilterServlet implements Filter {
 
     @Override
     public void destroy() {
+
     }
 }

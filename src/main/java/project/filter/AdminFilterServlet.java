@@ -28,10 +28,8 @@ public class AdminFilterServlet implements Filter {
 
         if (userSession != null && userSession.getRole().equals("admin")) {
             chain.doFilter(request, response);
-        } else if (userSession != null && userSession.getRole().equals("user")) {
+        } else if (userSession.getRole().equals("user")) {
             res.sendRedirect("/user");
-        } else {
-            res.sendRedirect("/");
         }
     }
 
